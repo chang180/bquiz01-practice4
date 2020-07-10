@@ -1,3 +1,4 @@
+<?php include_once "base.php"; ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0040)http://127.0.0.1/test/exercise/collage/? -->
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -32,17 +33,17 @@
 				</div>
 				<div class="dbor" style="margin:3px; width:95%; height:20%; line-height:100px;">
 					<span class="t">進站總人數 :
-						1 </span>
+						<?= $total['total']; ?> </span>
 				</div>
 			</div>
-<?php
-$do=$_GET['do']??'main';
-$file="front/".$do.".php";
-include (file_exists($file))?$file:"/front/main.php";
+			<?php
+			$do = $_GET['do'] ?? 'main';
+			$file = "front/" . $do . ".php";
+			include (file_exists($file)) ? $file : "/front/main.php";
 
-?>
+			?>
 
-			
+
 			<div class="di di ad" style="height:540px; width:23%; padding:0px; margin-left:22px; float:left; ">
 				<!--右邊-->
 				<button style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;" onclick="lo('?do=login')">管理登入</button>
@@ -73,7 +74,9 @@ include (file_exists($file))?$file:"/front/main.php";
 		</div>
 		<div style="clear:both;"></div>
 		<div style="width:1024px; left:0px; position:relative; background:#FC3; margin-top:4px; height:123px; display:block;">
-			<span class="t" style="line-height:123px;"></span>
+			<span class="t" style="line-height:123px;">
+				<?= $bottom['bottom']; ?>
+			</span>
 		</div>
 	</div>
 
