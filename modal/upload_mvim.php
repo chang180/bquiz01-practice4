@@ -1,10 +1,10 @@
 <form action="api/upload.php" method="post" enctype="multipart/form-data">
-    <h3 class="cent">更新標題區圖片</h3>
+    <h3 class="cent">更換動畫圖片</h3>
 </form>
 <hr>
 <table>
     <tr>
-        <td style="text-align:right">標題區圖片</td>
+        <td style="text-align:right">動畫圖片</td>
         <td><input type="file" name="name"></td>
     </tr>
 </table>
