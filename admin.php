@@ -81,14 +81,14 @@
 						<tr>
 							<td style="width:70%;font-weight:800; border:#333 1px solid; border-radius:3px;" class="cent"><a href="?do=e=" style="color:#000; text-decoration:none;">後台管理區</a>
 							</td>
-							<td><button onclick="document.cookie='user=';location.replace('?')" style="width:99%; margin-right:2px; height:50px;">管理登出</button></td>
+							<td><button onclick="lo('api/logout.php')" style="width:99%; margin-right:2px; height:50px;">管理登出</button></td>
 						</tr>
 					</tbody>
 				</table>
 				<?php
 				$do = $_GET['do'] ?? 'title';
 				$file = "backend/" . $do . ".php";
-				include (file_exists($file)) ? $file : "/backend/title.php";
+				include (file_exists($file)) ? $file : "backend/title.php";
 
 				?>
 			</div>
