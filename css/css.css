@@ -75,6 +75,8 @@ body
 	line-height:30px;
 	padding:2px 10px 2px 10px;
 	margin:7px 1px 7px 1px;
+
+	height:30px;
 }
 .mainmu:hover
 {
@@ -95,6 +97,15 @@ body
 {
 	background:url(../icon/menu4.fw.png) center no-repeat;
 	background-size:cover;
+}
+
+.mw{
+	position: absolute;
+	top:20px;
+	width: 150px;
+	left:150px;
+	z-index:99;
+	display:none;
 }
 #lf
 {
